@@ -12,7 +12,7 @@ export default function EmblaCarousel() {
     
     <div className='pt-20 pb-20 bg-slate-100 min-h-screen' id='pengalaman'>
       <h1 className="text-3xl font-bold py-10 text-center">Projek</h1>
-        <div className="embla max-w-[350px] md:max-w-[800px] mx-auto" ref={emblaRef}>
+        <div className="embla max-w-[450px] md:max-w-[800px] mx-auto" ref={emblaRef}>
         <div className="embla__container ">
             <div className="embla__slide text-center">
                 <img src={projek} alt="p1" />
