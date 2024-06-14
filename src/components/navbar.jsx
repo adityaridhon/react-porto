@@ -23,7 +23,7 @@ const navbar = () => {
       </div>
 
       <div className={nav ? 'fixed h-screen z-20 right-0 top-0 w-[60%] bg-gray-400 ease-in-out duration-500' : 'fixed h-screen right-[-100%]'}>
-      <ul className="p-8 text-xl mt-8 text-white">      
+      <ul className="p-8 text-lg mt-8 text-white">      
         <li className="p-5"><a href="#tentang" className="hover:underline">Tentang Saya</a></li>
         <li className="p-5"><a href="#pendidikan" className="hover:underline">Pendidikan</a></li>
         <li className="p-5"><a href="#pengalaman" className="hover:underline">Pengalaman</a></li>

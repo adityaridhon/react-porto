@@ -12,10 +12,10 @@ export default function EmblaCarousel() {
     
     <div className='pt-20 pb-20 bg-slate-100 min-h-screen' id='pengalaman'>
       <h1 className="text-3xl font-bold py-10 text-center">Projek</h1>
-        <div className="embla max-w-[450px] md:max-w-[800px] mx-auto" ref={emblaRef}>
+        <div className="embla max-w-[320px] md:max-w-[800px] mx-auto" ref={emblaRef}>
         <div className="embla__container ">
             <div className="embla__slide text-center">
-                <img src={projek} alt="p1" />
+                <img src={projek} alt="p1" className='rounded-xl'/>
                 <h2 className='text-xl font-bold mt-4'>Portfolio Website</h2>
                 <p>Membuat website portfolio pribadi menggunkan React JS, Tailwind CSS dan Vite.</p>
                 <div className='flex justify-between mx-20 mt-6'>
@@ -25,7 +25,7 @@ export default function EmblaCarousel() {
                 </div>
             </div>
             <div className="embla__slide text-center">
-                <img src={projek2} alt="p2" />
+                <img src={projek2} alt="p2" className='rounded-xl'/>
                 <h2 className='text-xl font-bold mt-4 text-center'>Landing Page Website</h2>
                 <p>Berkolaborasi membuat website landing page sebuah acara menggunkan React JS, Tailwind CSS dan Vite.</p>
                 <div className='flex justify-between mx-20 mt-6'>

@@ -1,6 +1,6 @@
 import home from '../assets/home.png'
 import { TypeAnimation } from 'react-type-animation';
-import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
+import { AiFillGithub, AiOutlineInstagram, AiFillLinkedin  } from "react-icons/ai";
 import { IoIosDocument } from "react-icons/io";
 
 
@@ -14,10 +14,10 @@ const jumbotron = () => {
           <TypeAnimation sequence={['Front-End', 1000, 'Front-End Web Enthusiast', 1000, 'Front-End Web Developer ',1000,]} wrapper="span" speed={50} repeat={Infinity} className='font-semibold text-gray-800'
     />
           <p className='mt-2 mx-10 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repudiandae facilis possimus, illum autem, hic enim nostrum veniam quam perspiciatis placeat, ea perferendis. Veniam modi ipsum rerum molestiae ut incidunt?</p>
-        <div className='flex justify-center mt-8 gap-4 md:justify-start md:ml-12'>
-          <a href="https://github.com/adityaridhon" target='_blank' className='flex bg-transparent border border-slate-800 hover:bg-slate-800 hover:text-white duration-200 px-4 gap-2 py-3 text-dark rounded-lg'><AiFillGithub size={20}/>GitHub</a>
-          <a href="https://www.instagram.com/adtyrdho" target='_blank' className='flex bg-transparent border border-slate-800 hover:bg-gradient-to-br from-[#f9ce34] to-[#ee2a7b] hover:border-white hover:text-white duration-200 px-4 gap-2 py-3 text-dark rounded-lg'><AiOutlineInstagram size={20}/> Instagram</a>
-          <a href="" className='flex bg-transparent border border-slate-800 hover:bg-green-700 hover:border-green-700 hover:text-white duration-200 px-4 gap-2 py-3 text-dark rounded-lg'> <IoIosDocument size={20}/> CV</a>
+        <div className='flex justify-center mt-8 gap-2 md:justify-start md:ml-12'>
+          <a href="https://github.com/adityaridhon" target='_blank' className='flex bg-transparent border border-slate-800 hover:bg-slate-800 hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg'><AiFillGithub size={24}/></a>
+          <a href="https://www.instagram.com/adtyrdho" target='_blank' className='flex bg-transparent border border-slate-800 hover:bg-gradient-to-br from-[#f9ce34] to-[#ee2a7b] hover:border-white hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg'><AiOutlineInstagram size={24}/> </a>
+          <a href="https://www.linkedin.com/in/aditya-ridho/" target='_blank' className='flex bg-transparent border border-slate-800 hover:bg-blue-800 hover:border-blue-800 hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg'> <AiFillLinkedin size={24}/></a>
         </div>
         </div>
       </div>
