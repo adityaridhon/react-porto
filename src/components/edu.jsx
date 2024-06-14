@@ -14,7 +14,7 @@ export default function edu() {
       <VerticalTimeline className="-z-50 mx-auto">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "rgb(55, 65, 81)" }}
+          contentStyle={{ background: "#040A18", color: "#E2E1DC" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="2023 - Sekarang"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -29,6 +29,7 @@ export default function edu() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2020 - 2023"
+          contentStyle={{ background: "#E2E1DC", color: "#040A18" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
