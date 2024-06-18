@@ -5,6 +5,7 @@ import Jumbotron from './components/jumbotron'
 import Edu from './components/edu'
 import Exp from './components/exp'
 import Footer from './components/footer'
+import Projek from './components/projek'
 
 
 
@@ -15,6 +16,7 @@ export default function App() {
     <Jumbotron/>
     <Edu/>
     <Exp/>
+    <Projek />
     <Footer/>
     </>
     )
