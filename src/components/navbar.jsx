@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../assets/logo.png";
+
 
 const navbar = () => {
   const [nav, setNav] = useState(false);
@@ -9,27 +11,24 @@ const navbar = () => {
   };
 
   return (
-    <div className="fixed z-50 w-full flex justify-between h-[80px] items-center p-5 bg-white border-b border-gray-200">
-      <h1 className="text-3xl font-bold ml-4 text-blue-800">ArN</h1>
-      <ul className="hidden md:flex text-xl font-medium">
+    <div className="fixed w-full z-10 flex justify-between h-[80px] items-center px-10 bg-[#F3F1EF] border-b-2 border-gray-700">
+      <div><a href="/"> <img src={logo} width={140} alt="" /></a>
+       
+      </div>
+      <ul className="hidden md:flex text-lg font-medium text-[#171513]">
         <li className="p-5">
-          <a href="#tentang" className="hover:underline">
+          <a href="#about" className="hover:underline">
             Tentang Saya
-          </a>
-        </li>
-        <li className="p-5">
-          <a href="#pendidikan" className="hover:underline">
-            Pendidikan
-          </a>
-        </li>
-        <li className="p-5">
-          <a href="#pengalaman" className="hover:underline">
-            Pengalaman
           </a>
         </li>
         <li className="p-5">
           <a href="#projek" className="hover:underline">
             Projek
+          </a>
+        </li>
+        <li className="p-5">
+          <a href="#pengalaman" className="hover:underline">
+            Pengalaman
           </a>
         </li>
       </ul>
@@ -41,29 +40,25 @@ const navbar = () => {
       <div
         className={
           nav
-            ? "fixed h-screen z-20 right-0 top-0 w-[70%] bg-stone-200 ease-in-out duration-500"
+            ? "fixed h-screen z-20 right-0 top-0 w-[55%] bg-stone-200 ease-in-out duration-700"
             : "fixed h-screen right-[-100%]"
         }
       >
+        
         <ul className="p-8 text-lg mt-8 text-gray-800 font-medium">
           <li className="p-5">
-            <a href="#tentang" className="hover:underline">
-              Tentang Saya
-            </a>
-          </li>
-          <li className="p-5">
-            <a href="#pendidikan" className="hover:underline">
-              Pendidikan
-            </a>
-          </li>
-          <li className="p-5">
-            <a href="#pengalaman" className="hover:underline">
-              Pengalaman
+            <a href="#about" className="hover:underline">
+            Tentang Saya
             </a>
           </li>
           <li className="p-5">
             <a href="#projek" className="hover:underline">
               Projek
+            </a>
+          </li>
+          <li className="p-5">
+            <a href="#pengalaman" className="hover:underline">
+              Pengalaman
             </a>
           </li>
         </ul>

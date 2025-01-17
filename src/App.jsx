@@ -1,23 +1,32 @@
+import "./App.css";
+import "./embla.css";
+import Navbar from "./components/navbar";
+import Jumbotron from "./components/jumbotron";
+import About from "./components/about";
+import Exp from "./components/exp";
+import Footer from "./components/footer";
+import Projek from "./components/projek";
+import projek1 from "./assets/project-1.png";
+import projek2 from "./assets/project-2.png";
+import projek3 from "./assets/project-3.png";
 
-import './App.css'
-import Navbar from './components/navbar'
-import Jumbotron from './components/jumbotron'
-import Edu from './components/edu'
-import Exp from './components/exp'
-import Footer from './components/footer'
-import Projek from './components/projek'
+const images = [projek1, projek2, projek3];
 
-
+const carouselOptions = {
+  loop: true,
+  autoplay: true,
+  speed: 1000,
+};
 
 export default function App() {
   return (
     <>
-    <Navbar/>
-    <Jumbotron/>
-    <Edu/>
-    <Exp/>
-    <Projek />
-    <Footer/>
+      <Navbar />
+      <Jumbotron />
+      <About />
+      <Projek />
+      <Exp />
+      <Footer />
     </>
-    )
+  );
 }

@@ -1,70 +1,70 @@
-import home from "../assets/home.png";
+import jumbo from "../assets/jumbo.png";
 import { TypeAnimation } from "react-type-animation";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+
 
 const jumbotron = () => {
   return (
-    <section id="tentang" className="min-h-screen pt-20 pb-20 md:pt-40">
-      <div className="md:flex justify-between pt-6">
-        <img src={home} alt="home" width={300} className="mx-auto md:ml-20" />
-        <div className="text-center mt-10">
-          <h2 className="font-bold text-3xl text-gray-900 md:text-4xl mb-2">
-            <span className="text-cyan-700">Adit</span>ya Ridho Nugroho
-          </h2>
-          <TypeAnimation
-            sequence={[
-              "Front-End",
-              100,
-              "Front-End Web Enthusiast",
-              1000,
-              "Front-End Web Developer ",
-              1000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-            className="font-semibold text-gray-800"
-          />
-          <p className="my-2 mx-10 ">
-            Halo semua 👋🏻. Perkenalkan saya Aditya Ridho Nugroho. Saya adalah
-            mahasiswa Informatika di Institut Teknologi Kalimantan dengan minat
-            mendalam pada UI/UX Design, Front-End Web Development, dan Network
-            Engineering. Pengalaman saya dalam mengelola kegiatan kepanitiaan
-            telah membekali saya dengan kemampuan komunikasi dan kerjasama tim
-            yang baik. Saya siap berkarya dan memberikan kontribusi positif
-            dalam lingkungan kerja yang kreatif dan inovatif.
-          </p>
-          <div className="flex justify-center mt-8 gap-2">
-            <a
-              href="https://github.com/adityaridhon"
-              target="_blank"
-              className="flex bg-transparent border border-slate-800 hover:bg-slate-800 hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg"
-            >
-              <AiFillGithub size={24} />
-            </a>
-            <a
-              href="https://www.instagram.com/adtyrdho"
-              target="_blank"
-              className="flex bg-transparent border border-slate-800 hover:bg-gradient-to-br from-[#f9ce34] to-[#ee2a7b] hover:border-white hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg"
-            >
-              <AiOutlineInstagram size={24} />{" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aditya-ridho/"
-              target="_blank"
-              className="flex bg-transparent border border-slate-800 hover:bg-blue-800 hover:border-blue-800 hover:text-white duration-200 px-5 gap-2 py-3 text-dark rounded-lg"
-            >
-              {" "}
-              <AiFillLinkedin size={24} />
-            </a>
-          </div>
+<section id="tentang" className="min-h-screen bg-[#F3F1EF] pt-14">
+
+
+<div className="flex flex-col md:flex-row-reverse justify-center items-center min-h-screen md:px-24">
+
+<div className="mx-auto max-w-[320px] md:max-w-full md:flex md:flex-row-reverse mt-10">
+        <img src={jumbo} alt="" className="" width={400} />
+        <div className="mt-4 md:mt-0 w-full">
+        <div className="text-center pb-14 md:text-left md:w-[90%]">
+    <h3 className="my-8 text-base">Aditya Ridho</h3>
+    <TypeAnimation
+      sequence={[
+        "Front-End Web &",
+        1400,
+        " ",
+        700,
+      ]}
+      wrapper="span"
+      speed={20}
+      repeat={Infinity}
+      className="font-extrabold md:text-5xl text-2xl italic"
+    />
+    <br />
+    <TypeAnimation
+      sequence={[
+        "UI/UX Developer 🚀",
+        1200,
+        " ",
+        600,
+      ]}
+      wrapper="span"
+      speed={30}
+      repeat={Infinity}
+      className="font-extrabold md:text-5xl text-2xl italic"
+    />
+    <p className="my-8 text-base">
+      Saya adalah peminat nombor 1 barcelona semenjak kecil sampai sekarang, because barca is debes
+    </p>
+    <div className="flex flex-col md:flex-row gap-4">
+      <a 
+        href="" 
+        className="p-4 rounded-xl hover:bg-[#4832c2] font-semibold bg-[#8773FE] text-white duration-200"
+      >
+        Kontak Saya
+      </a>
+      <a 
+        href="" 
+        className="p-4 rounded-xl hover:underline font-semibold"
+      >
+        Tentang Saya →
+      </a>
+    </div>
+  </div>
         </div>
       </div>
-    </section>
+</div>
+
+
+  
+</section>
+
   );
 };
 
