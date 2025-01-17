@@ -44,13 +44,13 @@ const jumbotron = () => {
     </p>
     <div className="flex flex-col md:flex-row gap-4">
       <a 
-        href="" 
+        href="#footer" 
         className="p-4 rounded-xl hover:bg-[#4832c2] font-semibold bg-[#8773FE] text-white duration-200"
       >
         Kontak Saya
       </a>
       <a 
-        href="" 
+        href="#about" 
         className="p-4 rounded-xl hover:underline font-semibold"
       >
         Tentang Saya →
