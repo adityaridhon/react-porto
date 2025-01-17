@@ -12,9 +12,7 @@ const navbar = () => {
 
   return (
     <div className="fixed w-full z-10 flex justify-between h-[80px] items-center px-10 bg-[#F3F1EF] border-b-2 border-gray-700">
-      <div><a href="/"> <img src={logo} width={140} alt="" /></a>
-       
-      </div>
+      <div><a href="/"> <img src={logo} alt="logo" className="w-[60%]" /></a></div>
       <ul className="hidden md:flex text-lg font-medium text-[#171513]">
         <li className="p-5">
           <a href="#about" className="hover:underline">
@@ -40,7 +38,7 @@ const navbar = () => {
       <div
         className={
           nav
-            ? "fixed h-screen z-20 right-0 top-0 w-[55%] bg-stone-200 ease-in-out duration-700"
+            ? "fixed h-screen z-20 right-0 top-0 w-[70%] bg-stone-200 ease-in-out duration-700"
             : "fixed h-screen right-[-100%]"
         }
       >

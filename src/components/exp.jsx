@@ -5,8 +5,8 @@ import hmif from "../assets/HMIF.png";
 
 const exp = () => {
   return (
-    <section className="pt-28 mr-32 ml-32 pb-10" id="pengalaman">
-      <h2 className='md:text-start text-center text-[#001F3F] font-bold text-4xl md:text-6xl'>experience</h2>
+    <section className="pt-20 pb-20 md:mx-32 mx-10" id="pengalaman">
+      <h2 className='md:text-start text-center text-[#001F3F] font-bold text-4xl md:text-6xl'>pengalaman</h2>
 
       {/* HMIF */}
       <div className="mx-auto max-w-[320px] md:max-w-[900px] md:flex md:flex-row-reverse mt-10">

@@ -11,7 +11,7 @@ export default function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <section className="pt-20 pb-20 min-h-screen md:mx-32 mx-10 " id="projek">
+    <section className="pt-20 pb-20 md:mx-32 mx-10 " id="projek">
       <h1 className="text-4xl md:text-6xl font-bold py-10 text-center md:text-end text-[#001F3F] ">
         projek
       </h1>
