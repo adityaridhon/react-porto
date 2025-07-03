@@ -1,29 +1,44 @@
-import React from 'react'
+import React from "react";
 import home from "../assets/first.png";
 
-
-const about = () => {
+const About = () => {
   return (
-        <div className='pt-20' id='about'>
-          <div className="mx-auto max-w-[320px] md:max-w-[90%] md:flex md:flex-row pt-10 justify-center items-center">
-            <img src={home} alt="tentang" className='w-full md:w-[30%]' />
-            <div className="mt-4 md:mt-0 md:ml-6 bg-[#FCDA68] md:p-12 p-6 text-gray-900 md:rounded-e-3xl rounded-b-3xl">
-              <h2 className="font-bold text-lg md:text-2xl">
-             Tentang Saya...
-              </h2>
-              <p className=" md:text-base text-sm my-4">Halo, saya Aditya Ridho, seorang mahasiswa semester 4 Program Studi Informatika Institut Teknologi Kalimantan. Dengan minat yang mendalam di bidang <span className='italic'>UI/UX Design, Web Development,</span> dan <span className='italic'>Internet of Things (IoT),</span> saya telah menjadikan teknologi sebagai bagian dari passion saya untuk menciptakan solusi kreatif. Minat ini didukung dengan pengalaman saya selama masa kuliah dengan beberapa projek. Jika Anda mencari seseorang yang berpikir out of the box dan selalu siap menerima tantangan baru, Anda bertemu dengan orang yang tepat. Mari bekerja sama!</p>
-              <div className="flex flex-col md:flex-row gap-4">
-                <a 
-                  href="#footer" 
-                  className="md:p-4 p-3 md:w-[20%] w-[45%] md:text-base text-sm rounded-xl hover:bg-[#4832c2] font-semibold bg-[#8773FE] text-white duration-200"
-                >
-                  Kontak Saya
-                </a>
-              </div>
-            </div>
+    <section id="about" className="pt-40" data-aos-delay="200">
+      <div className="mx-auto max-w-[26rem] md:max-w-[90%] flex flex-col md:flex-row items-center md:items-start justify-center gap-8 px-6 md:px-12">
+        
+        {/* Gambar */}
+        <img
+          data-aos="zoom-in-right"
+          src={home}
+          alt="tentang"
+          className="w-full md:w-[30%] rounded-xl"
+        />
+        
+        {/* Konten */}
+        <div className="text-gray-900 md:rounded-e-3xl rounded-b-3xl" data-aos="zoom-in-left">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Tentang Saya</h2>
+          
+          <p className="text-base md:text-lg leading-relaxed">
+            Halo! Namaku <span className="font-bold">Adit</span>, aku adalah mahasiswa aktif Program Studi Informatika di Institut Teknologi Kalimantan. 
+            Selama berkuliah aku memiliki beberapa ketertarikan di bidang{" "}
+            <span className="bg-gradient-to-tr from-[#4832c2] to-[#FCDA68] bg-clip-text text-transparent font-bold">
+              UI/UX Design dan Web Development.
+            </span>{" "}
+            Ketertarikan tersebut juga aku implementasikan dalam beberapa projek yang sudah aku buat, selebihnya kalian dapat lihat di portfolio ini!
+          </p>
+
+          <div className="mt-6">
+            <a
+              href="#footer"
+              className="inline-block px-6 py-3 text-sm md:text-base rounded-xl font-semibold text-white bg-[#8773FE] hover:bg-[#4832c2] hover:translate-x-1 hover:-translate-y-1 hover:shadow-xl transition-all duration-200"
+            >
+              Kontak Saya
+            </a>
           </div>
         </div>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default about
+export default About;

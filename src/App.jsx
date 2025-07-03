@@ -1,5 +1,8 @@
 import "./App.css";
 import "./embla.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Navbar from "./components/navbar";
 import Jumbotron from "./components/jumbotron";
 import About from "./components/about";
@@ -19,6 +22,14 @@ const carouselOptions = {
 };
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // durasi animasi (ms)
+      easing: 'ease-in-out', // gaya transisi
+      once: true, // animasi hanya sekali
+      mirror: false
+    });
+  }, []);
   return (
     <>
       <Navbar />
