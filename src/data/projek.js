@@ -5,10 +5,19 @@ import projek4 from "../assets/project-4.png"
 import projek5 from "../assets/project-5.png"
 import projek6 from "../assets/project-6.png"
 import projek7 from "../assets/project-7.png"
+import projek8 from "../assets/project-8.png"
 
-import { SiReact, SiTailwindcss, SiVite, SiPython, SiNetlify } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiVite, SiPython, SiNetlify, SiGooglesheets } from "react-icons/si";
 
 export const projects = [
+  {
+    title: "POS Simpel",
+    description: "Website Front-End Point Of Sales yang digunakan untuk sebuah kafe dengan data dummy.",
+    image: projek8,
+    link: "https://posposan.netlify.app/",
+    color: "text-blue-700",
+    tech: [SiReact, SiTailwindcss, SiVite, SiGooglesheets]
+  },
   {
     title: "KopiSop",
     description: "Website landing page sederhana yang dibuat untuk menampilkan informasi tentang kedai kopi.",
