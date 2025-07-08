@@ -25,7 +25,7 @@ const Jumbotron = () => {
               wrapper="span"
               speed={20}
               repeat={Infinity}
-              className="font-extrabold md:text-5xl text-2xl italic"
+              className="text-[#4832c2] font-extrabold md:text-5xl text-2xl italic"
             />
             <br />
             <TypeAnimation
@@ -33,7 +33,7 @@ const Jumbotron = () => {
               wrapper="span"
               speed={30}
               repeat={Infinity}
-              className="font-extrabold md:text-5xl text-2xl italic"
+              className="text-[#FCDA68] font-extrabold md:text-5xl text-2xl italic"
             />
             
             <p className="my-8 text-base">
