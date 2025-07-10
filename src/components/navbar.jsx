@@ -12,16 +12,15 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed w-full top-0 left-0 z-30 bg-white/60 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between h-[80px] px-6 md:px-10">
-        
+    <header className="fixed top-6 left-0 w-full z-50 flex justify-center px-5">
+      <div className="bg-white/80 backdrop-blur-lg rounded-full shadow-lg flex items-center justify-between px-6 md:px-14 h-[5rem] w-full max-w-[76rem] z-50 relative">
         {/* Logo */}
-        <a href="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-[120px]" />
+        <a href="/" className="flex items-center gap-2 font-bold text-xl text-black">
+          <img src={logo} alt="logo" className="w-full md:h-[2.5rem] h-[2rem]" />
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10 text-gray-800 font-semibold">
+        <nav className="hidden md:flex items-center gap-8 text-gray-800 font-semibold">
           {links.map((link, i) => (
             <a
               key={i}
@@ -36,26 +35,28 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Toggle */}
         <button
           className="md:hidden z-[60] text-gray-800"
           onClick={() => setNavOpen(!navOpen)}
         >
-          {navOpen ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
+          {navOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
         </button>
+      </div>
 
-        {/* Mobile Nav Overlay */}
-        <div
-          className={`fixed top-0 right-0 w-full h-screen bg-white/95 backdrop-blur-md flex flex-col items-center justify-center gap-10 text-2xl font-bold text-gray-800 transition-transform duration-500 ease-in-out ${
-            navOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
+      {/* Mobile Menu*/}
+      <div
+        className={`absolute top-full mt-4 w-[29.5rem] px-5 transition-all duration-500 ease-in-out ${
+          navOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
+        }`}
+      >
+        <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-8 md:hidden z-40">
           {links.map((link, i) => (
             <a
               key={i}
               href={link.href}
               onClick={() => setNavOpen(false)}
-              className="relative group text-lg transition-all"
+              className="relative group text-lg text-gray-800 font-semibold transition-all"
             >
               <span className="group-hover:text-[#4832c2] transition">
                 {link.name}
@@ -64,7 +65,6 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-
       </div>
     </header>
   );
